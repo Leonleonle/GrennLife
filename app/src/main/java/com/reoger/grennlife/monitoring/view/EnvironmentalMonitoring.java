@@ -53,7 +53,7 @@ public class EnvironmentalMonitoring extends AppCompatActivity implements IEnvir
     private static final int REQUEST_CODE = 0x12;
 
     private Button mMonitoring;
-    private Button mClear;
+  //  private Button mClear;
 
 
 
@@ -69,7 +69,7 @@ public class EnvironmentalMonitoring extends AppCompatActivity implements IEnvir
         mIMonitoringPresenter = new MonitoringPresenterCompl(this,EnvironmentalMonitoring.this);
         mIMonitoringPresenter.doGetCurrentLocation(this);
 
-        mClear.setOnClickListener(this);
+    //    mClear.setOnClickListener(this);
         mMonitoring.setOnClickListener(this);
 
         mAdapter = new SimpleAdapter(this, getData(), R.layout.item_gridview, new String[]{"image", "text"}, new int[]{R.id.gridview_photo, R.id.gridview_text});
@@ -124,7 +124,7 @@ public class EnvironmentalMonitoring extends AppCompatActivity implements IEnvir
 
 
         mMonitoring = (Button) findViewById(R.id.monitoring_button);
-        mClear = (Button)findViewById(R.id.monitoring_clear);
+    //    mClear = (Button)findViewById(R.id.monitoring_clear);
     }
 
     @Override
@@ -177,8 +177,8 @@ public class EnvironmentalMonitoring extends AppCompatActivity implements IEnvir
                     mIMonitoringPresenter.doUploadMonitoringInfo(title,content,num,location,pathList);
                 }
                 break;
-            case R.id.monitoring_clear:
-                mIMonitoringPresenter.doClear();
+//            case R.id.monitoring_clear:
+//                mIMonitoringPresenter.doClear();
         }
     }
 
@@ -275,7 +275,7 @@ public class EnvironmentalMonitoring extends AppCompatActivity implements IEnvir
     public List<? extends Map<String, ?>> getData() {
         list = new ArrayList<>();
         HashMap<String, Object> map = new HashMap<>();
-        map.put("image", R.mipmap.icon_addpic_focused);
+        map.put("image", R.mipmap.add___photo);
         map.put("text", "添加图片");
         list.add(map);
         return list;

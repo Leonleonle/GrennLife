@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/title_dynamic_details"></include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="哈哈哈哈哈哈哈"
+            android:textSize="21sp"
+            android:textColor="#aa000000"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="35dp"
+                android:layout_height="16dp"
+                android:text="发布"
+                android:padding="2dp"
+                android:textSize="11dp"
+                android:textColor="#662f4f4f"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/shape_button"/>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="6dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2016—10-12"
+                android:textColor="#662f4f4f"
+                android:textSize="12sp"
+                android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="by+用户名"
+                    android:textColor="#662f4f4f"
+                    android:layout_marginLeft="70dp"
+                    android:textSize="12sp"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="#66000000"
+            >
+        </View>
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="内容
+            哈哈哈哈"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/picture_3"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="80dp"
+                android:layout_height="1dp"
+                android:background="#000000"
+            />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="2016—10—12  18：00"
+                android:textSize="10sp"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/background_main"
+            >
+        </View>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_centerInParent="true"
+                    android:text="—— 暂无评论 ——"/>
+            </RelativeLayout>
+
+
+            <ListView
+                android:id="@+id/dynamic_comments_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                ></ListView>
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/background_main"
+            >
+        </View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+            <EditText
+                android:id="@+id/dynamic_comments_content"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:hint="输入评论"
+                android:drawableLeft="@mipmap/remark_"
+                android:drawablePadding="5dp"
+                android:textSize="14sp"
+                android:padding="2dp"
+                android:background="@drawable/shape_remark"/>
+
+            <Button
+                android:id="@+id/dynamic_comments_publish"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:text="发送"
+                android:textSize="14sp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_feedback_button"/>
+        </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/background_main"
+        android:layout_alignParentBottom="true">
+        
+        <ImageButton
+            android:id="@+id/remark_return"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@mipmap/details_return"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dynamic_item_like"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@mipmap/like"
+                android:layout_gravity="center"
+                android:layout_marginLeft="45dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dynamic_item_share"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="75dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@mipmap/share__"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#552f4f4f"
+            android:layout_marginBottom="36dp">
+        </View>
+    </RelativeLayout>
+</RelativeLayout>

@@ -11,8 +11,7 @@
         android:textColor="@color/white"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:textSize="18sp"
-        android:id="@+id/title_add_dynamic_text"/>
+        android:textSize="18sp" />
 
     <ImageButton
         android:layout_width="wrap_content"
@@ -20,6 +19,18 @@
         android:background="@mipmap/all__return"
         android:layout_centerVertical="true"
         android:layout_marginLeft="20dp"
-        android:id="@+id/title_add_dynamic_button"/>
+        android:id="@+id/title_add_dynamic_button"
+        ></ImageButton>
+
+    <Button
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:text="发布"
+        android:textColor="#aa11cd6e"
+        android:textSize="16dp"
+        android:background="@color/transparent"
+        android:id="@+id/dynamic_add_publish"
+        />
 
 </RelativeLayout>

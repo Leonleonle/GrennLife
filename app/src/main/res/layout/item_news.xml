@@ -1,46 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal" android:layout_width="match_parent"
+    android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginBottom="5dip"
-    android:layout_marginTop="5dip"
     android:background="@drawable/stroke_encyclopaedia">
 
 
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/background_main"
+        ></View>
     <LinearLayout
-        android:layout_weight="3"
-        android:layout_width="0dip"
-        android:layout_height="120dip">
-        <ImageView
-            android:paddingLeft="5dip"
-            android:id="@+id/news_image"
-            android:src="@drawable/ollie_north"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_weight="3"
+            android:layout_width="0dp"
+            android:layout_height="120dp">
+            <ImageView
+                android:paddingLeft="2dp"
+                android:id="@+id/news_image"
+                android:src="@drawable/ollie_north"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="7"
+            android:layout_width="0dp"
+            android:layout_height="120dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/news_title_text"
+                android:text="title"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="22sp"/>
+            <TextView
+                android:id="@+id/news_content_text"
+                android:text="content  content  content  content  content"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"/>
+        </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_weight="7"
-        android:layout_width="0dip"
-        android:layout_height="120dip"
-        android:paddingTop="5dip"
-        android:orientation="vertical">
-        <TextView
-            android:id="@+id/news_title_text"
-            android:text="title"
-            android:layout_gravity="center_horizontal"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="25sp"/>
-        <TextView
-            android:id="@+id/news_content_text"
-            android:text="content  content  content  content  content"
-            android:textSize="15sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:paddingTop="7dip"/>
-
-    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/background_main"
+        ></View>
 
 </LinearLayout>

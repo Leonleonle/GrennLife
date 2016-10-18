@@ -7,8 +7,8 @@
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="#edf5f1">
+        android:layout_height="4dp"
+        android:background="@color/background_main">
     </View>
 
     <LinearLayout
@@ -17,58 +17,61 @@
         android:orientation="horizontal"
         android:gravity="center">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="170dp"
-            android:layout_height="170dp"
-            android:src="@drawable/photo2" />
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/picture_3" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="对资源的简要描述"
+            android:text="对资源1的简要描述"
+            android:layout_marginTop="105dp"
+            android:layout_centerHorizontal="true"
             android:textSize="15sp"
-            android:gravity="center"
             android:padding="5dp"/>
-    </LinearLayout>
+    </RelativeLayout>
 
         <View
-            android:layout_width="0.5dp"
+            android:layout_width="5dp"
             android:layout_height="match_parent"
-            android:background="#662f4f4f"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="8dp"></View>
+            android:background="@color/background_main"></View>
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_weight="1"
         android:orientation="vertical">
 
         <ImageView
-            android:layout_width="170dp"
-            android:layout_height="170dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
             android:src="@drawable/photo2" />
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="对资源的简要描述"
+            android:text="对资源2的简要描述"
             android:textSize="15sp"
             android:padding="5dp"
-            android:gravity="center"/>
-    </LinearLayout>
+            android:layout_marginTop="105dp"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
     </LinearLayout>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="8dp"
-        android:background="#edf5f1">
+        android:layout_height="4dp"
+        android:background="@color/background_main">
     </View>
-
-
-
 </LinearLayout>

@@ -211,22 +211,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
      */
     void initializationData() {
 
-        BmobQuery<Dynamic> query = new BmobQuery<>();
-        query.addWhereNotEqualTo("title", "null");
-        query.setLimit(10);
-        query.findObjects(new FindListener<Dynamic>() {
-            @Override
-            public void done(List<Dynamic> list, BmobException e) {
-                if (e == null) {
-                    mDatas.addAll(list);
-                    Message msg = new Message();
-                    msg.what = INITIALZATION_FINISH;
-                    mHandler.sendMessage(msg);
-                } else {
-                    log.d("TAG", "查询失败");
+        BmobQuery<Dynamic> query = new BmobQuery<Dynamic>();
+        if (query==null){
+            log.d("Tdn,","ggiu");
+        }else {
+            query.addWhereNotEqualTo("title", "null");
+            query.setLimit(10);
+            query.findObjects(new FindListener<Dynamic>() {
+                @Override
+                public void done(List<Dynamic> list, BmobException e) {
+                    if (e == null) {
+                        mDatas.addAll(list);
+                        Message msg = new Message();
+                        msg.what = INITIALZATION_FINISH;
+                        mHandler.sendMessage(msg);
+                    } else {
+                        log.d("TAG", "查询失败");
+                    }
                 }
-            }
-        });
+            });
+        }
+
 
     }
 

@@ -16,7 +16,7 @@ import com.reoger.grennlife.R;
 public class TitleLayout_home extends LinearLayout {
     public TitleLayout_home(Context context, AttributeSet attrs) {
         super(context, attrs);
-        LayoutInflater.from(context).inflate(R.layout.home_title, this);
+        LayoutInflater.from(context).inflate(R.layout.title_home, this);
         ImageButton remind = (ImageButton)findViewById(R.id.system_remind);
         remind.setOnClickListener(new OnClickListener() {
             @Override

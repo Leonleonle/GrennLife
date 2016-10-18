@@ -96,13 +96,11 @@
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/user_into_marginLeft"/>
 
-
-
     </LinearLayout>
     <View
-        android:layout_width="330dp"
+        android:layout_width="match_parent"
         android:layout_height="0.3dp"
-        android:layout_gravity="right"
+        android:layout_marginLeft="60dp"
         android:background="#66e0e0e0">
     </View>
 
@@ -134,9 +132,9 @@
 
     </LinearLayout>
     <View
-        android:layout_width="330dp"
+        android:layout_width="match_parent"
         android:layout_height="0.3dp"
-        android:layout_gravity="right"
+        android:layout_marginLeft="60dp"
         android:background="#66e0e0e0">
     </View>
 
@@ -168,9 +166,9 @@
 
     </LinearLayout>
     <View
-        android:layout_width="330dp"
+        android:layout_width="match_parent"
         android:layout_height="0.3dp"
-        android:layout_gravity="right"
+        android:layout_marginLeft="60dp"
         android:background="#66e0e0e0">
     </View>
 
@@ -248,9 +246,9 @@
 
     </LinearLayout>
     <View
-        android:layout_width="330dp"
+        android:layout_width="match_parent"
         android:layout_height="0.3dp"
-        android:layout_gravity="right"
+        android:layout_marginLeft="60dp"
         android:background="#66e0e0e0">
     </View>
 
@@ -282,9 +280,9 @@
 
     </LinearLayout>
     <View
-        android:layout_width="320dp"
+        android:layout_width="match_parent"
         android:layout_height="0.3dp"
-        android:layout_gravity="right"
+        android:layout_marginLeft="60dp"
         android:background="#66e0e0e0">
     </View>
 
